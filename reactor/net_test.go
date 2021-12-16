@@ -4,16 +4,17 @@ package reactor
 
 import (
 	"context"
-	"github.com/godzie44/go-uring/uring"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/suite"
-	"golang.org/x/sys/unix"
 	"math"
 	"net"
 	"sync"
 	"syscall"
 	"testing"
 	"time"
+
+	"github.com/godzie44/go-uring/uring"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/suite"
+	"golang.org/x/sys/unix"
 )
 
 type NetworkReactorTestSuite struct {
